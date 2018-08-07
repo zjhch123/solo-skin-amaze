@@ -809,8 +809,6 @@
  
  .am-container>.am-g {
    width: auto;
-   margin-left: -0.625rem;
-   margin-right: -0.625rem;
  }
  
  @media only screen and (min-width:641px) {
@@ -836,8 +834,6 @@
  }
  
  .am-g .am-g {
-   margin-left: -0.625rem;
-   margin-right: -0.625rem;
    width: auto;
  }
  
@@ -870,8 +866,6 @@
  
  [class*="am-u-"] {
    width: 100%;
-   padding-left: 0.625rem;
-   padding-right: 0.625rem;
    float: left;
    position: relative;
  }
@@ -15521,7 +15515,6 @@
  .comments-container-inner {
    max-width: 1170px;
    margin: 0 auto;
-   padding: 0 20px
  }
  
  .comments-container-inner .page-navigator {
@@ -16166,4 +16159,7 @@
  }
  .article-comments {
    color: white;
+ }
+ .comments-view {
+   display: inline-block;
  }

@@ -135,8 +135,10 @@
                         <span class="meta">
                             @${article.authorName} &nbsp;
                             ${article.articleCreateDate?string("yyyy-MM-dd")} &nbsp;
-                            <a href="${servePath}${article.articlePermalink}#comments" class="article-comments">${article.articleCommentCount} ${commentLabel}</a> &nbsp;
-                            ${article.articleViewCount} ${viewLabel}
+                            <div class="comments-view" style="display: inline-block">
+                                <a href="${servePath}${article.articlePermalink}#comments" class="article-comments">${article.articleCommentCount} ${commentLabel}</a> &nbsp;
+                                ${article.articleViewCount} ${viewLabel}
+                            </div>
                             </span>
                         <div class="tags post-tags">
                             <#list article.articleTags?split(",") as articleTag>
@@ -164,12 +166,13 @@
                     <hr>
                 </div>
             </div>
-        </div>
-        <div class="comment-container">
-            <div class="comments-container-inner">
-                <@comments commentList=articleComments article=article></@comments>
+            <div class="comment-container">
+                <div class="comments-container-inner">
+                    <@comments commentList=articleComments article=article></@comments>
+                </div>
             </div>
         </div>
+        
         <#include "footer.ftl">
         <@comment_script oId=article.oId>
         page.tips.externalRelevantArticlesDisplayCount = "${externalRelevantArticlesDisplayCount}";

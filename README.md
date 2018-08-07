@@ -1,4 +1,4 @@
 # solo-skin-amaze
 blog solo's skin - amaze
 
-[preview](https://blod.hduzplus.xyz)
+[preview](https://blog.hduzplus.xyz)

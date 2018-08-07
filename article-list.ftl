@@ -39,16 +39,25 @@
                         </div>
                     </div>
                 </div>
-            <span class="pull-right time pc_time">${article.articleCreateDate?string("yyyy-MM-dd")}</span>
+                <span class="pull-right time pc_time">${article.articleCreateDate?string("yyyy-MM-dd")}</span>
             </div>
         <h1 class="post-index-title"><a itemtype="url" href="${servePath}${article.articlePermalink}">${article.articleTitle}</a></h1>
         <div class="post-content-preview article-body">
             ${article.articleAbstract}
         </div>
-        <#--  响应式
         <div class="clearfix topic-footer">
-            <span class="pull-left time mobile_time"><?php $this->date('F j, Y'); ?></span>
-        </div>  -->
+            <span class="pull-left time mobile_time">${article.articleCreateDate?string("yyyy-MM-dd")}&nbsp; | &nbsp;</span>
+            <span class="tooltipped tooltipped-n" aria-label="${commentCountLabel}">
+                <i class="icon-comments"></i>
+                <a href="${servePath}${article.articlePermalink}#comments">
+                    ${article.articleCommentCount} ${commentLabel}
+                </a>
+            </span>
+            &nbsp; | &nbsp;
+            <span class="tooltipped tooltipped-n" aria-label="${viewCountLabel}">
+                ${article.articleViewCount} ${viewLabel}
+            </span>
+        </div>
     </article>
     </#list>
 
@@ -57,12 +66,12 @@
     <ul class="am-pagination">
         <#if 1 < paginationCurrentPageNum>
             <li class="am-pagination-prev">
-                <a class="prev" href="${servePath}${path}/${paginationPreviousPageNum}">&laquo; Prev</a>
+                <a class="prev" href="${servePath}${path}/${paginationCurrentPageNum - 1}">&laquo; Prev</a>
             </li>
         </#if>
         <#if paginationCurrentPageNum < paginationPageCount>
             <li class="am-pagination-next">
-                <a class="next" href="${servePath}${path}/${paginationNextPageNum}">Next &raquo;</a>
+                <a class="next" href="${servePath}${path}/${paginationCurrentPageNum + 1}">Next &raquo;</a>
             </li>
         </#if>
     </ul>

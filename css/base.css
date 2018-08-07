@@ -13627,7 +13627,7 @@
  }
  
  .blog-entry-article {
-   margin: 3rem 0;
+   margin: 3rem 0 0;
    padding-bottom: 3rem;
    border-bottom: 1px solid #e5e5e5
  }
@@ -14159,10 +14159,6 @@
      padding-right: 0;
      padding-left: 0;
    }
- }
- 
- .navbar-fixed-top .navbar-collapse {
-   max-height: 340px;
  }
  
  @media (max-device-width: 480px) and (orientation: landscape) {
@@ -16164,4 +16160,10 @@
  .tags-list .tags a:hover,
  .tags-list .tags a:active {
    border-color: #0085a1;
+ }
+ .topic-footer {
+   font-size: 14px;
+ }
+ .article-comments {
+   color: white;
  }

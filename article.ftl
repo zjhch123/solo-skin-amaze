@@ -132,7 +132,12 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="post-heading">
                         <h1>${article.articleTitle}</h1>
-                        <span class="meta">@${article.authorName} &nbsp;${article.articleCreateDate?string("yyyy-MM-dd")}</span>
+                        <span class="meta">
+                            @${article.authorName} &nbsp;
+                            ${article.articleCreateDate?string("yyyy-MM-dd")} &nbsp;
+                            <a href="${servePath}${article.articlePermalink}#comments" class="article-comments">${article.articleCommentCount} ${commentLabel}</a> &nbsp;
+                            ${article.articleViewCount} ${viewLabel}
+                            </span>
                         <div class="tags post-tags">
                             <#list article.articleTags?split(",") as articleTag>
                                 <a class="tag" rel="tag" href="${servePath}/tags/${articleTag?url('UTF-8')}">

@@ -32,7 +32,7 @@
             <div class="am-u-lg-8 am-u-sm-12">
                 <main class="archives-articles">
                     <div class="title">
-                        <h2 class="tip">
+                        <h3 class="tip">
                             <i class="icon-inbox"></i>
                             &nbsp;
                             <#if "en" == localeString?substring(0, 2)>
@@ -41,7 +41,7 @@
                                 ${archiveDate.archiveDateYear} ${yearLabel} ${archiveDate.archiveDateMonth} ${monthLabel}
                             </#if>
                             - ${archiveDate.archiveDatePublishedArticleCount} ${articleLabel}
-                        </h2>
+                        </h3>
                     </div>
                     <#include "article-list.ftl">
                 </main>

@@ -31,6 +31,7 @@
         <div class="am-g am-g-fixed blog-fixed">
             <div class="am-u-lg-8 am-u-sm-12">
                 <main class="post post-list">
+                <h3>动态</h3>
                     <#if 0 != recentComments?size>
                         <ul class="comments" id="comments">
                             <#list recentComments as comment>

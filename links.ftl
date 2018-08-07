@@ -32,8 +32,7 @@
             <div class="am-u-lg-8 am-u-sm-12">
                 <main class="links-list">
                     <div class="title">
-                         <h3><i class="icon-link"></i>
-                             &nbsp;${linkLabel}</h3>
+                         <h3>${linkLabel}</h3>
                     </div>
                     <#if 0 != links?size>
                         <ul class="list">

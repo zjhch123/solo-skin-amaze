@@ -32,8 +32,7 @@
             <div class="am-u-lg-8 am-u-sm-12">
                 <main class="tags-list">
                     <div class="title">
-                        <h3><i class="icon-tags"></i>
-                            &nbsp; ${sumLabel} ${tags?size} ${tagLabel}
+                        <h3>&nbsp; ${sumLabel} ${tags?size} ${tagLabel}</h3>
                     </div>
                     <div class="tags">
                         <#list tags as tag>

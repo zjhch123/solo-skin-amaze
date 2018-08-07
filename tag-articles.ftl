@@ -32,9 +32,8 @@
             <div class="am-u-lg-8 am-u-sm-12">
                 <main class="tag-articles">
                     <div class="title">
-                        <h3 class="tip"><i class="icon-tags"></i>
-                            &nbsp;${tag.tagTitle}
-                            <small>${tagLabel}</small>
+                        <h3 class="tip">
+                            ${tag.tagTitle}<small>${tagLabel}</small>
                         </h3>
                     </div>
                     <#include "article-list.ftl">

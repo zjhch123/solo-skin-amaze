@@ -15054,7 +15054,7 @@
    font-weight: 500;
    position: absolute;
    content: '#';
-   left: 0px;
+   left: -10px;
    color: #337ab7;
  }
  

@@ -15046,7 +15046,7 @@
    font-weight: 600;
    position: absolute;
    content: '#';
-   left: -5px;
+   left: -15px;
    color: #337ab7;
  }
  
@@ -15508,7 +15508,6 @@
    z-index: 1;
    color: #5f5f5f;
    max-width: 1170px;
-   padding: 0 15px 0 15px;
    margin: 0 auto;
  }
  

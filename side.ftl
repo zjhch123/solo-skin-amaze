@@ -22,6 +22,21 @@
         <section>
             <div class="sidebar-header">
                 <span class="sidebar-header-title">
+                    搜索文章
+                </span>
+            </div>
+            <div class="sidebar-search">
+                <form action="${servePath}/search">
+                    <div class="search-input">
+                        <input type="text" name="keyword" placeholder="输入关键字搜索">
+                        <button type="submit" class="search-submit"></button>
+                    <div>
+                </form>
+            </div>
+        <section>
+        <section>
+            <div class="sidebar-header">
+                <span class="sidebar-header-title">
                     关于博主
                 </span>
             </div>
@@ -39,7 +54,6 @@
                 </div>
             </main>
         </section>
-        
         <#if 0 != mostUsedTags?size>
         <section>
             <div class="sidebar-header">

@@ -33,7 +33,7 @@
                     <div>
                 </form>
             </div>
-        <section>
+        </section>
         <section>
             <div class="sidebar-header">
                 <span class="sidebar-header-title">

@@ -34,7 +34,9 @@
         <#include "header.ftl">
         <div class="am-g am-g-fixed blog-fixed">
             <div class="am-u-lg-8 am-u-sm-12">
-                <#include "article-list.ftl">
+                <main class="articles-list">
+                    <#include "article-list.ftl">
+                </main>
             </div>
             <#include "side.ftl">
         </div>

@@ -813,8 +813,8 @@
  
  @media only screen and (min-width:641px) {
    .am-container>.am-g {
-     margin-left: -0.9375rem;
-     margin-right: -0.9375rem;
+     /* margin-left: -0.9375rem;
+     margin-right: -0.9375rem; */
    }
  }
  
@@ -845,8 +845,8 @@
  
  @media only screen and (min-width:641px) {
    .am-g .am-g {
-     margin-left: -0.9375rem;
-     margin-right: -0.9375rem;
+     /* margin-left: -0.9375rem;
+     margin-right: -0.9375rem; */
    }
  }
  
@@ -14357,7 +14357,7 @@
  
  @media (min-width: 1200px) {
    .sidebar-container {
-     padding-right: 5%;
+     padding: 0 8px;
    }
  }
  
@@ -14386,7 +14386,7 @@
  .sidebar-container {
    color: #bfbfbf;
    font-size: 14px;
-   padding-left: 5%;
+   padding: 0 3%;
  }
  
  .sidebar-container .tags a:hover {
@@ -16137,9 +16137,10 @@
    color: #aaa;
  }
  
- .links-list, .post-list, .category-list, .archives-articles, .tag-articles, .tags-list {
+ .articles-list, .links-list, .post-list, .category-list, .archives-articles, .tag-articles, .tags-list {
    margin: 3rem 0 0;
    min-height: 400px;
+   padding: 0 8px;
  }
  .tags-list .tags a:hover {
    color: #0085a1 !important;

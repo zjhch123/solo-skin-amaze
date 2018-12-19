@@ -182,4 +182,9 @@
         </#if>
         </@comment_script>    
     </body>
+    <script>
+        $(function() {
+            $('article h1, article h2, article h3, article h4, article h5').find('a').removeAttr('target')
+        })
+    </script>
 </html>

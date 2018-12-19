@@ -3365,11 +3365,12 @@
    line-height: 1.8;
    font-size: 16px !important;
    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-   font-weight: 500;
+   font-weight: normal;
  }
  
  .post-content-preview:hover {
    color: #0085a1;
+   cursor: default;
  }
  
  .post-content-preview ol {
@@ -3630,21 +3631,56 @@
  code {
    font-size: 90%;
  }
+
+ .article-trigger h1,
+ .article-trigger h2,
+ .article-trigger h3,
+ .article-trigger h4,
+ .article-trigger h5 {
+   display: table;
+   position: relative;
+ }
+
+ .article-trigger h1 a,
+ .article-trigger h2 a,
+ .article-trigger h3 a,
+ .article-trigger h4 a,
+ .article-trigger h5 a {
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   display: block;
+ }
  
+ .article-trigger h2 {
+   padding-left: 1em;
+ }
+
+ .article-trigger h3 {
+  padding-left: 1.5em;
+}
+
+ .article-trigger h2::before,
+ .article-trigger h3::before {
+    position: absolute;
+    left: 0;
+    color: #337ab7;
+ }
+
  .article-trigger h2::before {
    font-weight: 600;
-   position: absolute;
    content: '#';
-   left: -15px;
-   color: #337ab7;
  }
  
  .article-trigger h3::before {
    font-weight: 500;
-   position: absolute;
-   content: '#';
-   left: -10px;
-   color: #337ab7;
+   content: '##';
+ }
+
+ .article-trigger a {
+   color: #5085ff;
  }
  
  .topic-header {

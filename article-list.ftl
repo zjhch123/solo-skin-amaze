@@ -66,12 +66,12 @@
     <ul class="am-pagination">
         <#if 1 < paginationCurrentPageNum>
             <li class="am-pagination-prev">
-                <a class="prev" href="${servePath}${path}/${paginationCurrentPageNum - 1}">&laquo; Prev</a>
+                <a class="prev" href="${servePath}${path}?p=${paginationPreviousPageNum}">&laquo; Prev</a>
             </li>
         </#if>
         <#if paginationCurrentPageNum < paginationPageCount>
             <li class="am-pagination-next">
-                <a class="next" href="${servePath}${path}/${paginationCurrentPageNum + 1}">Next &raquo;</a>
+                <a class="next" href="${servePath}${path}?p=${paginationNextPageNum}">Next &raquo;</a>
             </li>
         </#if>
     </ul>

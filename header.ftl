@@ -37,7 +37,7 @@
           </li>
           <li>
             <a rel="archive" href="${servePath}/links.html">
-              s${linkLabel}
+              ${linkLabel}
             </a>
           </li>
           <#if isLoggedIn>

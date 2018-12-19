@@ -37,7 +37,7 @@
           </li>
           <li>
             <a rel="archive" href="${servePath}/links.html">
-              <i class="icon-link"></i> ${linkLabel}
+              s${linkLabel}
             </a>
           </li>
           <#if isLoggedIn>
@@ -51,7 +51,7 @@
                 ${logoutLabel}
               </a>
             </li>
-              <#else>
+          <#else>
             <li>
               <a href="${loginURL}">
                 ${loginLabel}
@@ -75,9 +75,6 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="site-heading">
-          <h1>
-          </h1>
-          <!-- <hr class="small"> -->
           <span class="subheading">
             ${blogSubtitle}
           </span>

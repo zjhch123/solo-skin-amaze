@@ -96,8 +96,13 @@
                             ${archiveLabel}
                         </a>
                     </li>
+                    <li>
+                        <a rel="archive" href="${servePath}/links.html">
+                            ${linkLabel}
+                        </a>
+                    </li>
                     <#if isLoggedIn>
-                        <li>
+                    <li>
                         <a href="${servePath}/admin-index.do#main" title="${adminLabel}">
                             ${adminLabel}
                         </a>

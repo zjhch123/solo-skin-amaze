@@ -36,17 +36,17 @@
                              &nbsp;${statistic.statisticPublishedBlogArticleCount} ${articleLabel}</h3>
                     </span>
                     <#if 0 != archiveDates?size>
-                        <ul class="list">
+                        <ul class="archives-list list">
                         <#list archiveDates as archiveDate>
-                            <li>
+                            <li class="archives-list-item">
                                 <#if "en" == localeString?substring(0, 2)>
                                     <a class="post-title" href="${servePath}/archives/${archiveDate.archiveDateYear}/${archiveDate.archiveDateMonth}">
                                         ${archiveDate.monthName} ${archiveDate.archiveDateYear}(${archiveDate.archiveDatePublishedArticleCount})
                                     </a>
-                                    <#else>
-                                        <a class="post-title" href="${servePath}/archives/${archiveDate.archiveDateYear}/${archiveDate.archiveDateMonth}">
-                                            ${archiveDate.archiveDateYear} ${yearLabel} ${archiveDate.archiveDateMonth} ${monthLabel}(${archiveDate.archiveDatePublishedArticleCount})
-                                        </a>
+                                <#else>
+                                    <a class="post-title" href="${servePath}/archives/${archiveDate.archiveDateYear}/${archiveDate.archiveDateMonth}">
+                                        ${archiveDate.archiveDateYear} ${yearLabel} ${archiveDate.archiveDateMonth} ${monthLabel}(${archiveDate.archiveDatePublishedArticleCount})
+                                    </a>
                                 </#if>
                             </li>
                         </#list>

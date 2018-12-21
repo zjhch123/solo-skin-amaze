@@ -4485,3 +4485,31 @@
  background-repeat: no-repeat;
  background-position: 50% 50%;
 }
+
+
+.archives-list {
+  list-style: none;
+  padding: 0;
+  font-size: 0;
+  text-align: justify;
+}
+.archives-list .archives-list-item {
+  display: inline-block;
+  width: 32%;
+  margin-right: 1%;
+  margin-bottom: 8px;
+  height: 100px;
+  font-size: 14px;
+  border: 1px solid #ececec;
+  transition: all .4s;
+  box-sizing: border-box;
+  padding: 12px;
+}
+.archives-list .archives-list-item:hover {
+  box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
+@media (max-width: 750px) {
+  .archives-list .archives-list-item {
+    width: 49%;
+  }
+}

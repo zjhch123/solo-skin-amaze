@@ -73,7 +73,7 @@
             <tr>
                 <td>
                     <input style="width:30%" placeholder="${captchaLabel}" type="text" class="normalInput" id="commentValidate"/>
-                    <img class="captcha" id="captcha" alt="validate" src="${servePath}/captcha.do" />
+                    <img class="captcha" id="captcha" alt="validate" src="${servePath}/captcha?code=0.7654321" />
                 </td>
             </tr>
             </#if>

@@ -34,17 +34,16 @@
                     <div class="title">
                          <h3>${linkLabel}</h3>
                     </div>
+                    <div class="list">
                     <#if 0 != links?size>
-                        <ul class="list">
-                            <#list links as link>
-                                <li>
-                                    <a rel="friend" href="${link.linkAddress}" title="${link.linkDescription}" target="_blank">
-                                        ${link.linkTitle}
-                                    </a>
-                                </li>
-                            </#list>
-                        </ul>
+                        <#list links as link>
+                            <a class="links-item" rel="friend" href="${link.linkAddress}" title="${link.linkDescription}" target="_blank">
+                                <span class="item-title">${link.linkTitle}</span>
+                                <span class="item-desc">${link.linkDescription}</span>
+                            </a>
+                        </#list>
                     </#if>
+                    </div>
                 </main>
             </div>
             <#include "side.ftl">

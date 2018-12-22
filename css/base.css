@@ -4507,9 +4507,32 @@
 }
 .archives-list .archives-list-item:hover {
   box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+  transform: scale(1.01);
 }
 @media (max-width: 750px) {
   .archives-list .archives-list-item {
     width: 49%;
   }
+}
+.links-item:hover {
+  box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+  transform: scale(1.01);
+}
+.links-item {
+  width: 100%;
+  height: 80px;
+  display: block;
+  border: 1px solid #ececec;
+  margin-bottom: 8px;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: all .4s;
+}
+.links-item .item-title, 
+.links-item .item-desc {
+  display: block;
+}
+.links-item .item-desc {
+  font-size: 12px;
 }

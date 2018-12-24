@@ -3034,7 +3034,6 @@
  }
  
  .sidebar-lists a {
-   color: #666;
    text-decoration: none;
    display: block;
  }
@@ -4526,7 +4525,7 @@
   margin-bottom: 8px;
   padding: 12px;
   box-sizing: border-box;
-  font-size: 14px;
+  font-size: 16px;
   transition: all .4s;
 }
 .links-item .item-title, 

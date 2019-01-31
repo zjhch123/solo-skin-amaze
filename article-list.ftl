@@ -71,7 +71,7 @@
         </#if>
         <#if paginationCurrentPageNum < paginationPageCount>
             <li class="am-pagination-next">
-                <a class="next" href="${servePath}${path}?p=${paginationNextPageNum}">Next &raquo;</a>
+                <a class="next" href="${servePath}${path}?p=${paginationCurrentPageNum+1}">Next &raquo;</a>
             </li>
         </#if>
     </ul>

@@ -66,7 +66,7 @@
     <ul class="am-pagination">
         <#if 1 < paginationCurrentPageNum>
             <li class="am-pagination-prev">
-                <a class="prev" href="${servePath}${path}?p=${paginationPreviousPageNum}">&laquo; Prev</a>
+                <a class="prev" href="${servePath}${path}?p=${paginationCurrentPageNum-1}">&laquo; Prev</a>
             </li>
         </#if>
         <#if paginationCurrentPageNum < paginationPageCount>

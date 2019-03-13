@@ -53,13 +53,8 @@
             </li>
           <#else>
             <li>
-              <a href="${loginURL}">
-                ${loginLabel}
-              </a>
-            </li>
-            <li>
-              <a href="${servePath}/register">
-                ${registerLabel}
+              <a href="${servePath}/start">
+                ${startToUseLabel}
               </a>
             </li>
           </#if>

@@ -2038,14 +2038,14 @@
    }
    .navbar-custom.is-fixed .navbar-brand:hover,
    .navbar-custom.is-fixed .navbar-brand:focus {
-     color: #0085a1;
+     color: #D6555F;
    }
    .navbar-custom.is-fixed .nav li a {
      color: #404040;
    }
    .navbar-custom.is-fixed .nav li a:hover,
    .navbar-custom.is-fixed .nav li a:focus {
-     color: #0085a1;
+     color: #D6555F;
    }
    .navbar-custom.is-visible {
      /* if the user changes the scrolling direction, we show the header */
@@ -2086,14 +2086,14 @@
    }
    .navbar-custom.is-fixed .navbar-brand:hover,
    .navbar-custom.is-fixed .navbar-brand:focus {
-     color: #0085a1;
+     color: #D6555F;
    }
    .navbar-custom.is-fixed .nav li a {
      color: #404040;
    }
    .navbar-custom.is-fixed .nav li a:hover,
    .navbar-custom.is-fixed .nav li a:focus {
-     color: #0085a1;
+     color: #D6555F;
    }
    .navbar-custom.is-visible {
      /* if the user changes the scrolling direction, we show the header */
@@ -2753,13 +2753,13 @@
  ::-moz-selection {
    color: white;
    text-shadow: none;
-   background: #0085a1;
+   background: #D6555F;
  }
  
  ::selection {
    color: white;
    text-shadow: none;
-   background: #0085a1;
+   background: #D6555F;
  }
  
  img::selection {

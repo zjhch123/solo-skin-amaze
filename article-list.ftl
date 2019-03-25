@@ -45,18 +45,21 @@
         <div class="post-content-preview article-body">
             ${article.articleAbstract}
         </div>
-        <div class="clearfix topic-footer">
-            <span class="pull-left time mobile_time">${article.articleCreateDate?string("yyyy-MM-dd")}&nbsp; | &nbsp;</span>
-            <span class="tooltipped tooltipped-n" aria-label="${commentCountLabel}">
-                <i class="icon-comments"></i>
-                <a href="${servePath}${article.articlePermalink}#comments">
-                    ${article.articleCommentCount} ${commentLabel}
-                </a>
-            </span>
-            &nbsp; | &nbsp;
-            <span class="tooltipped tooltipped-n" aria-label="${viewCountLabel}">
-                ${article.articleViewCount} ${viewLabel}
-            </span>
+        <div class="topic-footer">
+            <div class="topic-footer-left">
+                <span class="pull-left time mobile_time">${article.articleCreateDate?string("yyyy-MM-dd")}&nbsp; | &nbsp;</span>
+                <span class="tooltipped tooltipped-n" aria-label="${commentCountLabel}">
+                    <i class="icon-comments"></i>
+                    <a href="${servePath}${article.articlePermalink}#comments">
+                        ${article.articleCommentCount} ${commentLabel}
+                    </a>
+                </span>
+                &nbsp; | &nbsp;
+                <span class="tooltipped tooltipped-n" aria-label="${viewCountLabel}">
+                    ${article.articleViewCount} ${viewLabel}
+                </span>
+            </div>
+            <a class="topic-footer-right" href="${servePath}${article.articlePermalink}">阅读全文</a>
         </div>
     </article>
     </#list>

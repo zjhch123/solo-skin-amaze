@@ -548,15 +548,6 @@
    * links
    */
  
- a {
-   color: #5085FF;
- }
- 
- a:hover,
- a:focus {
-   color: #0350ff;
- }
- 
  a:focus {
    outline: thin dotted;
    outline: 1px auto -webkit-focus-ring-color;
@@ -716,8 +707,8 @@
    padding-top: 5px;
    padding-bottom: 5px;
    padding-left: 15px;
-   border-left: 4px solid #ccc;
-   font-family: Georgia, "Times New Roman", Times, Kai, "Kaiti SC", KaiTi, BiauKai, "FontAwesome", serif;
+   border-left: 2px solid #D6555F;
+   font-family: PingFang SC, "Microsoft YaHei", sans-serif;
    /* Small print for identifying the source */
    /* Smaller margin if `small` follows */
  }
@@ -725,7 +716,7 @@
  blockquote small {
    display: block;
    color: #999999;
-   font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", "Droid Sans", "Source Han Sans", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+   font-family: PingFang SC, "Microsoft YaHei", sans-serif;
    text-align: right;
  }
  
@@ -1515,8 +1506,8 @@
  .am-pagination>.am-active>span:focus {
    z-index: 2;
    color: #fff;
-   background-color: #5085FF;
-   border-color: #5085FF;
+   background-color: #D6555F;
+   border-color: #D6555F;
    cursor: default;
  }
  
@@ -1559,6 +1550,19 @@
  /* ==========================================================================
      Component: Article
    ============================================================================ */
+ .am-article {
+   font-size: 0.9em;
+ }
+
+ .am-article ol { counter-reset: item; position: relative; }
+ .am-article ol li { display: block; }
+ .am-article ol li:before {
+    position: absolute;
+    left: 0;
+    content: counter(item) ". ";
+    counter-increment: item;
+    color: #D6555F;
+ }
  
  .am-article:before,
  .am-article:after {
@@ -1575,7 +1579,10 @@
  }
  
  .am-article .b3-solo-list {
-   display: none;
+  margin: 20px 30px 20px 0;
+  list-style: none;
+  font-size: 1em;
+  padding-left: 0;
  }
  
  .am-article+.am-article {
@@ -1628,10 +1635,6 @@
  
  /* Sub-object `.@{ns}article-bd` */
  
- .am-article-bd blockquote {
-   font-family: Georgia, "Times New Roman", Times, Kai, "Kaiti SC", KaiTi, BiauKai, "FontAwesome", serif;
- }
- 
  .am-article-bd img {
    display: block;
    max-width: 100%;
@@ -1666,7 +1669,7 @@
  
  a:hover,
  a:focus {
-   color: #42b983
+   color: #D6555F
  }
  
  .blog-text-center {
@@ -2361,7 +2364,7 @@
  }
  
  .sidebar-container .tags a:hover {
-   color: #0085a1 !important;
+   color: #D6555F !important;
  }
  
  .sidebar-container .tags a {
@@ -2370,7 +2373,7 @@
  
  .sidebar-container .tags a:hover,
  .sidebar-container .tags a:active {
-   border-color: #0085a1;
+   border-color: #D6555F;
  }
  
  .sidebar-container .list-inline>li {
@@ -2712,8 +2715,7 @@
  }
  
  .post-content-preview:hover {
-   color: #0085a1;
-   cursor: default;
+   color: #D6555F;
  }
  
  .post-content-preview ol {
@@ -2965,7 +2967,7 @@
  .article-trigger h3::before {
     position: absolute;
     left: 0;
-    color: #337ab7;
+    color: #D6555F;
  }
 
  .article-trigger h2::before {
@@ -2979,7 +2981,11 @@
  }
 
  .article-trigger a {
-   color: #5085ff;
+   color: #D6555F;
+ }
+
+ .article-trigger a:hover {
+   color: red;
  }
  
  .topic-header {
@@ -3082,6 +3088,11 @@
    display: inline;
    cursor: pointer;
    text-decoration: none;
+ }
+
+ .topic-header .author-lockup a:hover,
+ .topic-header .author-lockup a:focus {
+   color: #D6555F;
  }
  
  .topic-header .author-lockup .in {
@@ -3384,7 +3395,7 @@
    padding: 0 8px;
  }
  .tags-list .tags a:hover {
-   color: #0085a1 !important;
+   color: #D6555F !important;
  }
  
  .tags-list .tags a {
@@ -3393,10 +3404,12 @@
  
  .tags-list .tags a:hover,
  .tags-list .tags a:active {
-   border-color: #0085a1;
+   border-color: #D6555F;
  }
  .topic-footer {
    font-size: 14px;
+   display: flex;
+   justify-content: space-between;
  }
  .article-comments {
    color: white;

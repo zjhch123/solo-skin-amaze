@@ -172,11 +172,11 @@
             Skin.initArticle()
             Skin.initComment = function (articleOId, articleTags) {
                 page.tips.externalRelevantArticlesDisplayCount = "${externalRelevantArticlesDisplayCount}";
-            <#if 0 != randomArticlesDisplayCount>
-                page.loadRandomArticles("<div class='recommend__title'>社区推荐</div>");
-            </#if>
             <#if 0 != externalRelevantArticlesDisplayCount>
-                page.loadExternalRelevantArticles(articleTags, "<div class='recommend__title'>站内推荐</div>");
+                page.loadExternalRelevantArticles(articleTags, "<div class='recommend__title'>社区推荐</div>");
+            </#if>
+            <#if 0 != randomArticlesDisplayCount>
+                page.loadRandomArticles("<div class='recommend__title'>站内推荐</div>");
             </#if>
             <#if 0 != relevantArticlesDisplayCount>
                 page.loadRelevantArticles(articleOId, '<div class="recommend__title">相关阅读</div>');

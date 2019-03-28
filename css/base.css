@@ -3986,3 +3986,28 @@
   float: left;
   margin-right: 3px
 }
+
+.article-recommend {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .article-recommend {
+    flex-direction: column;
+  }
+}
+.article-recommend > div {
+  flex: 1;
+}
+.article-recommend .recommend__title {
+  color: black;
+  font-size: 16px;
+}
+.article-recommend ul {
+  list-style: none;
+  padding-left: 0;
+}

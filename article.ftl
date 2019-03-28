@@ -161,11 +161,11 @@
                     <@comments commentList=articleComments article=article></@comments>
                 </div>
             </div>
-        </div>
-        <div class="recommend">
-            <div id="externalRelevantArticles"></div>
-            <div id="randomArticles"></div>
-            <div id="relevantArticles"></div>
+            <div class="article-recommend">
+                <div id="externalRelevantArticles"></div>
+                <div id="randomArticles"></div>
+                <div id="relevantArticles"></div>
+            </div>
         </div>
         <#include "footer.ftl">
         <@comment_script oId=article.oId commentable=article.commentable>

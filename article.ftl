@@ -118,24 +118,21 @@
         </nav>
         <header class="intro-header" style="background-image: url('/skins/${skinDirName}/images/header.jpg')">
             <div class="container">
-                <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-heading">
-                        <h1>${article.articleTitle}</h1>
-                        <span class="meta">
-                            @${article.authorName} &nbsp;
-                            ${article.articleCreateDate?string("yyyy-MM-dd")} &nbsp;
-                            <div class="comments-view" style="display: inline-block">
-                                <a href="${servePath}${article.articlePermalink}#comments" class="article-comments">${article.articleCommentCount} ${commentLabel}</a> &nbsp;
-                                ${article.articleViewCount} ${viewLabel}
-                            </div>
-                            </span>
-                        <div class="tags post-tags">
-                            <#list article.articleTags?split(",") as articleTag>
-                                <a class="tag" rel="tag" href="${servePath}/tags/${articleTag?url('UTF-8')}">
-                                    ${articleTag}</a>&nbsp;
-                            </#list>
+                <div class="post-heading">
+                    <h1>${article.articleTitle}</h1>
+                    <div class="meta">
+                        @${article.authorName} &nbsp;
+                        ${article.articleCreateDate?string("yyyy-MM-dd")} &nbsp;
+                        <div class="comments-view" style="display: inline-block">
+                            <a href="${servePath}${article.articlePermalink}#comments" class="article-comments">${article.articleCommentCount} ${commentLabel}</a> &nbsp;
+                            ${article.articleViewCount} ${viewLabel}
                         </div>
+                    </div>
+                    <div class="tags post-tags">
+                        <#list article.articleTags?split(",") as articleTag>
+                            <a class="tag" rel="tag" href="${servePath}/tags/${articleTag?url('UTF-8')}">
+                                ${articleTag}</a>&nbsp;
+                        </#list>
                     </div>
                 </div>
             </div>

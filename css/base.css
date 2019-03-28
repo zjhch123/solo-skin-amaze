@@ -77,136 +77,35 @@
    */
  
  article,
- aside,
- details,
- figcaption,
- figure,
- footer,
- header,
- hgroup,
- menu,
- main,
- nav,
- section,
- summary {
+ nav {
    display: block;
  }
  
- /**
-   * 1. Correct `inline-block` display not defined in IE 8/9.
-   * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
-   */
- 
- audio,
- canvas,
- progress,
- video {
-   display: inline-block;
-   /* 1 */
-   vertical-align: baseline;
-   /* 2 */
- }
- 
- /**
-   * Prevent modern browsers from displaying `audio` without controls.
-   * Remove excess height in iOS 5 devices.
-   */
- 
- audio:not([controls]) {
-   display: none;
-   height: 0;
- }
- 
- /**
-   * Address `[hidden]` styling not present in IE 8/9/10.
-   * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
-   */
- 
- [hidden],
- template,
- script {
-   display: none;
- }
- 
- /* Links
-     ========================================================================== */
- 
- /**
-   * Remove the gray background color from active links in IE 10.
-   */
- 
  a {
+   color: #404040;
    background-color: transparent;
- }
- 
- /**
-   * Address `outline` inconsistency between Chrome and other browsers.
-   */
- 
- a:focus {
-   outline: thin dotted;
- }
- 
- /**
-   * Improve readability when focused and also mouse hovered in all browsers.
-   */
- 
- a:active,
- a:hover {
-   outline: 0;
- }
- 
- /* Text-level semantics
-     ========================================================================== */
- 
- /**
-   * Remove text-decoration
-   */
- 
- ins,
- a {
    text-decoration: none;
  }
  
- /**
-   * Address styling not present in IE 8/9, Safari 5, and Chrome.
-   */
- 
- abbr[title] {
-   border-bottom: 1px dotted;
+ a:focus {
+   outline: thin dotted;
+   outline: 1px auto -webkit-focus-ring-color;
+   outline-offset: -2px;
  }
- 
- /**
-   * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
-   */
+
+ a:active,
+ a:hover {
+   color: #D6555F;
+   outline: 0;
+ }
  
  b,
  strong {
    font-weight: bold;
  }
  
- /**
-   * Improve readability of pre-formatted text in all browsers.
-   */
- 
  pre {
    white-space: pre-wrap;
- }
- 
- /**
-   * Set consistent quote types.
-   */
- 
- q {
-   quotes: "\201C" "\201D" "\2018" "\2019";
- }
- 
- /**
-   * Address inconsistent and variable font size in all browsers.
-   */
- 
- small {
-   font-size: 80%;
  }
  
  /**
@@ -250,29 +149,12 @@
    /* 4 */
  }
  
- /**
-   * Correct overflow displayed oddly in IE 9.
-   */
- 
- svg:not(:root) {
-   overflow: hidden;
- }
- 
  /* Grouping content
      ========================================================================== */
  
  /**
    * Address margin not present in IE 8/9 and Safari.
    */
- 
- figure {
-   margin: 0;
- }
- 
- /**
-   * Correct font family set oddly in Safari 5 and Chrome.
-   */
- 
  code,
  kbd,
  pre,
@@ -281,63 +163,19 @@
    font-size: 1em;
  }
  
- /* Forms
-     ========================================================================== */
- 
- /**
-   * Define consistent border, margin, and padding.
-   */
- 
- fieldset {
-   border: 1px solid #c0c0c0;
-   margin: 0 2px;
-   padding: 0.35em 0.625em 0.75em;
- }
- 
- /**
-   * 1. Correct `color` not being inherited in IE 8/9.
-   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
-   */
- 
- legend {
-   border: 0;
-   /* 1 */
-   padding: 0;
-   /* 2 */
- }
- 
- /**
-   * 1. Correct color not being inherited.
-   *    Known issue: affects color of disabled elements.
-   * 2. Correct font properties not being inherited.
-   * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
-   */
- 
  button,
  input,
  optgroup,
  select,
  textarea {
    color: inherit;
-   /* 1 */
    font: inherit;
-   /* 2 */
    margin: 0;
-   /* 3 */
  }
- 
- /**
-   * Address `overflow` set to `hidden` in IE 8/9/10/11.
-   */
  
  button {
    overflow: visible;
  }
- 
- /**
-   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
-   * the UA stylesheet.
-   */
  
  button,
  input {
@@ -458,15 +296,6 @@
    resize: vertical;
  }
  
- /**
-   * Don't inherit the `font-weight` (applied by a rule above).
-   * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
-   */
- 
- optgroup {
-   font-weight: bold;
- }
- 
  /* Tables
      ========================================================================== */
  
@@ -542,47 +371,6 @@
      -moz-hyphens: auto;
      hyphens: auto;
    }
- }
- 
- /**
-   * links
-   */
- 
- a:focus {
-   outline: thin dotted;
-   outline: 1px auto -webkit-focus-ring-color;
-   outline-offset: -2px;
- }
- 
- /* Insert */
- 
- ins {
-   background: #ffa;
-   color: #666666;
- }
- 
- /**
-   * Mark
-   * Note: Addresses styling not present in IE 8/9.
-   */
- 
- mark {
-   background: #ffa;
-   color: #666666;
- }
- 
- /**
-   * Abbreviation and definition
-   */
- 
- abbr[title],
- dfn[title] {
-   cursor: help;
- }
- 
- dfn[title] {
-   border-bottom: 1px dotted;
-   font-style: normal;
  }
  
  /* Spacing for block elements */
@@ -695,12 +483,6 @@
    /* 1 */
  }
  
- /* Address */
- 
- address {
-   font-style: normal;
- }
- 
  /* Quotes */
  
  blockquote {
@@ -722,12 +504,6 @@
  
  blockquote p:last-of-type {
    margin-bottom: 0;
- }
- 
- /* iframe */
- 
- iframe {
-   border: 0;
  }
  
  /* Forms
@@ -1312,34 +1088,6 @@
  }
  
  /* ==========================================================================
-     Component: AVG Grid
-   ============================================================================ */
- 
- [class*="am-avg-"] {
-   display: block;
-   padding: 0;
-   margin: 0;
-   list-style: none;
- }
- 
- [class*="am-avg-"]:before,
- [class*="am-avg-"]:after {
-   content: " ";
-   display: table;
- }
- 
- [class*="am-avg-"]:after {
-   clear: both;
- }
- 
- [class*="am-avg-"]>li {
-   display: block;
-   height: auto;
-   float: left;
- }
- 
- 
- /* ==========================================================================
      Component: Code
    ============================================================================ */
  
@@ -1383,21 +1131,6 @@
    ============================================================================ */
  
  /* Normalize */
- 
- fieldset {
-   border: none;
- }
- 
- legend {
-   display: block;
-   width: 100%;
-   margin-bottom: 1rem;
-   font-size: 1.25rem;
-   line-height: inherit;
-   color: #666666;
-   border-bottom: 1px solid #e5e5e5;
-   padding-bottom: 0.3125rem;
- }
  
  label {
    display: inline-block;
@@ -1661,15 +1394,6 @@
    -moz-osx-font-smoothing: grayscale;
    -webkit-transform: translate(0, 0);
    transform: translate(0, 0);
- }
- 
- a {
-   color: #404040
- }
- 
- a:hover,
- a:focus {
-   color: #D6555F
  }
  
  .blog-text-center {
@@ -3526,6 +3250,32 @@
   }
 }
 
+.article-recommend {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .article-recommend {
+    flex-direction: column;
+  }
+}
+.article-recommend > div {
+  flex: 1;
+}
+.article-recommend .recommend__title {
+  color: black;
+  font-size: 16px;
+}
+.article-recommend ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
 .vditor-tooltipped {
   position: relative;
   cursor: pointer
@@ -3908,37 +3658,40 @@
   top: -3px;
   border-radius: 3px;
   overflow: hidden;
-  transition: all .15s ease-in-out
+  transition: all .15s ease-in-out;
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px
+}
+
+.vditor-upload ul {
+  margin: 0
 }
 
 .vditor-upload--tip {
-  height: 20px;
-  font-size: 12px;
-  line-height: 20px;
-  color: #fff;
+  height: auto;
   opacity: 1 !important
 }
 
 .vditor-upload--tip .vditor-upload__close {
-  position: absolute;
-  right: 5px;
-  top: 0;
-  cursor: pointer;
   display: block
 }
 
-.vditor-upload--tip .vditor-upload__progress {
-  padding: 0 5px
-}
-
 .vditor-upload__close {
-  display: none
+  display: none;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  padding: 5px;
+  top: 0
 }
 
 .vditor-upload__progress {
   height: 100%;
   background-color: rgba(66,133,244,0.8);
-  transition: all .15s ease-in-out
+  transition: all .15s ease-in-out;
+  padding: 5px;
+  box-sizing: border-box
 }
 
 .vditor-hint {
@@ -3987,27 +3740,224 @@
   margin-right: 3px
 }
 
-.article-recommend {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  font-size: 14px;
-  margin-top: 24px;
-  flex-wrap: wrap;
-}
-@media (max-width: 768px) {
-  .article-recommend {
-    flex-direction: column;
-  }
-}
-.article-recommend > div {
-  flex: 1;
-}
-.article-recommend .recommend__title {
-  color: black;
+.vditor-reset {
+  font-family: "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
+  word-wrap: break-word;
+  overflow: auto;
+  line-height: 1.65;
   font-size: 16px;
+  word-break: break-word
 }
-.article-recommend ul {
+
+.vditor-reset ul,.vditor-reset ol {
+  padding-left: 2em;
+  margin-top: 0;
+  margin-bottom: 16px
+}
+
+.vditor-reset li {
+  margin-top: 0.25em
+}
+
+.vditor-reset audio {
+  max-width: 100%
+}
+
+.vditor-reset video {
+  max-height: 90vh
+}
+
+.vditor-reset img.emoji {
+  cursor: auto;
+  max-width: 20px;
+  vertical-align: top
+}
+
+.vditor-reset h1,.vditor-reset h2,.vditor-reset h3,.vditor-reset h4,.vditor-reset h5,.vditor-reset h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25
+}
+
+.vditor-reset h1 {
+  padding-bottom: 0.3em;
+  font-size: 1.7em;
+  border-bottom: 1px solid #eee
+}
+
+.vditor-reset h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eee
+}
+
+.vditor-reset h3 {
+  font-size: 1.25em
+}
+
+.vditor-reset h4 {
+  font-size: 1em
+}
+
+.vditor-reset h5 {
+  font-size: 0.875em
+}
+
+.vditor-reset h6 {
+  font-size: 0.85em
+}
+
+.vditor-reset hr {
+  height: 0.15em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e7e7e7;
+  border: 0
+}
+
+.vditor-reset p {
+  margin-top: 0;
+  margin-bottom: 16px
+}
+
+.vditor-reset blockquote {
+  padding: 0 1em;
+  color: #777;
+  border-left: 0.25em solid #ddd;
+  margin: 0 0 16px 0
+}
+
+.vditor-reset blockquote p {
+  margin: 0
+}
+
+.vditor-reset ins>iframe {
+  border: 0
+}
+
+.vditor-reset iframe {
+  border: 1px solid #d1d5da
+}
+
+.vditor-reset table {
+  width: 100%;
+  border: 1px solid #dedede;
+  margin: 15px auto;
+  border-collapse: collapse;
+  empty-cells: show
+}
+
+.vditor-reset thead {
+  text-align: center
+}
+
+.vditor-reset td,.vditor-reset th {
+  height: 35px;
+  border: 1px solid #dedede;
+  padding: 0 10px
+}
+
+.vditor-reset th {
+  font-weight: bold;
+  text-align: center !important;
+  background: rgba(158,188,226,0.2)
+}
+
+.vditor-reset tbody tr:nth-child(2n) {
+  background: rgba(158,188,226,0.12)
+}
+
+.vditor-reset tr:hover {
+  background: #efefef
+}
+
+.vditor-reset code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
+  font-family: mononoki,Consolas,"Liberation Mono",Menlo,Courier,monospace;
+  word-break: break-word
+}
+
+.vditor-reset pre>code {
+  padding: 0.5em;
+  background-color: rgba(0,0,0,0.04);
+  background-image: url("https://cdn.jsdelivr.net/npm/vditor@1.1.2/src/assets/images/code-bg.png");
+  background-size: 20px 20px;
+  border-radius: 5px;
+  display: block;
+  overflow: auto
+}
+
+.vditor-reset pre:hover div.vditor-copy {
+  display: block
+}
+
+.vditor-reset kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #d1d5da;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb
+}
+
+.vditor-reset summary {
+  cursor: pointer
+}
+
+.vditor-reset summary:focus {
+  outline: none
+}
+
+.vditor-reset svg {
+  height: auto;
+  width: auto
+}
+
+.vditor-reset .katex {
+  position: relative
+}
+
+.vditor-task {
   list-style: none;
-  padding-left: 0;
+  margin-left: -1.4em;
+  display: flex;
+  align-items: center
+}
+
+.vditor-task input {
+  margin-right: 5px
+}
+
+.vditor-copy {
+  position: relative;
+  display: none
+}
+
+.vditor-copy textarea {
+  position: absolute;
+  top: -100000px
+}
+
+.vditor-copy span {
+  cursor: pointer;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  height: 20px;
+  width: 20px
+}
+
+.vditor-copy svg {
+  height: 20px;
+  width: 20px
 }

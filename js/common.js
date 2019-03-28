@@ -104,7 +104,30 @@ var Skin = {
             }
         });
     },
-    _initArticleCommon: function (i, t) {},
-    initArticle: function (i, t) {}
+    initArticle: function (i, t) {
+        if ($('article pre > code').length === 0) {
+            return
+        }
+
+        Util.addStyle('https://cdn.jsdelivr.net/npm/highlight.js@9.15.6/styles/' +
+            Label.hljsStyle + '.min.css', 'vditorHljsStyle')
+      
+        if (!Label.markedAvailable) {
+            if (typeof hljs === 'undefined') {
+                $.ajax({
+                    url: 'https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.6/build/highlight.min.js',
+                    dataType: 'script',
+                    cache: true,
+                    success: function () {
+                    hljs.initHighlighting.called = false
+                    hljs.initHighlighting()
+                    },
+                })
+            } else {
+                hljs.initHighlighting.called = false
+                hljs.initHighlighting()
+            }
+        }
+    }
   };
   Skin.init();

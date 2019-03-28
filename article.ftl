@@ -33,22 +33,22 @@
         <#if nextArticlePermalink??>
             <link rel="next" title="${nextArticleTitle}" href="${servePath}${nextArticlePermalink}">
         </#if>
-            <!-- Open Graph -->
-            <meta property="og:locale" content="zh_CN"/>
-            <meta property="og:type" content="article"/>
-            <meta property="og:title" content="${article.articleTitle}"/>
-            <meta property="og:description" content="${article.articleAbstract?html}"/>
-            <meta property="og:image" content="${article.authorThumbnailURL}"/>
-            <meta property="og:url" content="${servePath}${article.articlePermalink}"/>
-            <meta property="og:site_name" content="Solo"/>
-            <!-- Twitter Card -->
-            <meta name="twitter:card" content="summary"/>
-            <meta name="twitter:description" content="${article.articleAbstract?html}"/>
-            <meta name="twitter:title" content="${article.articleTitle}"/>
-            <meta name="twitter:image" content="${article.authorThumbnailURL}"/>
-            <meta name="twitter:url" content="${servePath}${article.articlePermalink}"/>
-            <meta name="twitter:site" content="@DL88250"/>
-            <meta name="twitter:creator" content="@DL88250"/>
+        <!-- Open Graph -->
+        <meta property="og:locale" content="zh_CN"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="${article.articleTitle}"/>
+        <meta property="og:description" content="${article.articleAbstract?html}"/>
+        <meta property="og:image" content="${article.authorThumbnailURL}"/>
+        <meta property="og:url" content="${servePath}${article.articlePermalink}"/>
+        <meta property="og:site_name" content="Solo"/>
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:description" content="${article.articleAbstract?html}"/>
+        <meta name="twitter:title" content="${article.articleTitle}"/>
+        <meta name="twitter:image" content="${article.authorThumbnailURL}"/>
+        <meta name="twitter:url" content="${servePath}${article.articlePermalink}"/>
+        <meta name="twitter:site" content="@DL88250"/>
+        <meta name="twitter:creator" content="@DL88250"/>
     </head>
     <body>
         <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -162,19 +162,24 @@
                 </div>
             </div>
         </div>
+        <div class="recommend">
+            <div id="externalRelevantArticles"></div>
+            <div id="randomArticles"></div>
+            <div id="relevantArticles"></div>
+        </div>
         <#include "footer.ftl">
         <@comment_script oId=article.oId commentable=article.commentable>
             Skin.initArticle()
             Skin.initComment = function (articleOId, articleTags) {
                 page.tips.externalRelevantArticlesDisplayCount = "${externalRelevantArticlesDisplayCount}";
             <#if 0 != randomArticlesDisplayCount>
-                page.loadRandomArticles("<div class='module__title'><span>${randomArticlesLabel}</span></div>");
+                page.loadRandomArticles("<div class='recommend__title'>社区推荐</div>");
             </#if>
             <#if 0 != externalRelevantArticlesDisplayCount>
-                page.loadExternalRelevantArticles(articleTags, "<div class='module__title'><span>${externalRelevantArticlesLabel}</span></div>");
+                page.loadExternalRelevantArticles(articleTags, "<div class='recommend__title'>站内推荐</div>");
             </#if>
             <#if 0 != relevantArticlesDisplayCount>
-                page.loadRelevantArticles(articleOId, '<div class="module__title"><span>${relevantArticlesLabel}</span></div>');
+                page.loadRelevantArticles(articleOId, '<div class="recommend__title">相关阅读</div>');
             </#if>
             }
             Skin.initComment('${article.oId}', "<#list article.articleTags?split(",") as articleTag>${articleTag}<#if articleTag_has_next>,</#if></#list>")

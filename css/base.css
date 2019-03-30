@@ -3681,7 +3681,7 @@
   word-wrap: break-word;
   overflow: auto;
   line-height: 1.65;
-  font-size: 16px;
+  font-size: 14px;
   word-break: break-word
 }
 
@@ -3811,7 +3811,7 @@
 .vditor-reset code {
   padding: 0.2em 0.4em;
   margin: 0;
-  font-size: 85%;
+  font-size: 14px;
   background-color: rgba(27,31,35,0.05);
   border-radius: 3px;
   font-family: mononoki,Consolas,"Liberation Mono",Menlo,Courier,monospace;

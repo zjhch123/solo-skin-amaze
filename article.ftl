@@ -140,7 +140,7 @@
         <div class="container">
             <div class="am-g am-g-fixed blog-fixed">
                 <div class="am-u-lg-12 am-u-sm-12">
-                    <article class="vditor-reset article-trigger">
+                    <article class="vditor-reset">
                         <div id="post-content">
                             ${article.articleContent}
                             <#if "" != article.articleSign.signHTML?trim>

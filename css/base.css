@@ -103,11 +103,6 @@
  strong {
    font-weight: bold;
  }
- 
- pre {
-   white-space: pre-wrap;
- }
- 
  /**
    * Prevent `sub` and `sup` affecting `line-height` in all browsers.
    */
@@ -399,37 +394,6 @@
  *+fieldset,
  *+figure {
    margin-top: 1rem;
- }
- 
- /* Headings
-     ========================================================================== */
- 
- h1,
- h2,
- h3,
- h4,
- h5,
- h6 {
-   margin: 0 0 1rem 0;
-   font-weight: 600;
-   font-size: 100%;
- }
- 
- h1 {
-   font-size: 1.5em;
- }
- 
- h2 {
-   font-size: 1.25em;
- }
- 
- *+h1,
- *+h2,
- *+h3,
- *+h4,
- *+h5,
- *+h6 {
-   margin-top: 2em;
  }
  
  /* Ordered and unordered lists */
@@ -1111,21 +1075,6 @@
    border-radius: 4px;
  }
  
- /* Code block */
- 
- pre {
-   display: block;
-   padding: 1rem;
-   margin: 0.625rem 0;
-   font-size: 0.8125rem;
-   line-height: 1.6;
-   word-break: break-all;
-   word-wrap: break-word;
-   color: #999999;
-   background-color: #f8f8f8;
-   border-radius: 4px;
- }
- 
  /* ==========================================================================
      Component: Form
    ============================================================================ */
@@ -1366,12 +1315,6 @@
    margin-top: 1.5rem;
  }
  
- /* Sub-object `.@{ns}article-bd` */
- 
- .am-article-bd img {
-   display: block;
-   max-width: 100%;
- }
  /* ==========================================================================
      Component: Button Group
    ============================================================================ */
@@ -3010,13 +2953,6 @@
    color: #46466E
  }
  
- /* fix pre width */
- 
- @media only screen and (min-width: 750px) {
-   pre {
-     max-width: 80%;
-   }
- }
  
  @media(max-width: 1000px) {
    .directory-content {

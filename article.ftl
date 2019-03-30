@@ -140,8 +140,8 @@
         <div class="container">
             <div class="am-g am-g-fixed blog-fixed">
                 <div class="am-u-lg-12 am-u-sm-12">
-                    <article class="am-article blog-article-p article-trigger">
-                        <div id="post-content" class="am-article-bd article-body">
+                    <article class="vditor-reset article-trigger">
+                        <div id="post-content">
                             ${article.articleContent}
                             <#if "" != article.articleSign.signHTML?trim>
                                 <div>
@@ -180,6 +180,7 @@
             </#if>
             }
             Skin.initComment('${article.oId}', "<#list article.articleTags?split(",") as articleTag>${articleTag}<#if articleTag_has_next>,</#if></#list>")
+            Util.parseMarkdown()
         </@comment_script>
     </body>
     <script>

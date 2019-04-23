@@ -3274,6 +3274,10 @@
   word-break: break-word
 }
 
+.vditor-reset a {
+  color: #d6555f;
+}
+
 .vditor-reset ul,.vditor-reset ol {
   padding-left: 2em;
   margin-top: 0;

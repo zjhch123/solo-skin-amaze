@@ -17,15 +17,14 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 -->
-<#include "macro-head.ftl">
 <#include "macro-comments.ftl">
+<#include "../../common-template/macro-common_head.ftl">
 <#include "../../common-template/macro-comment_script.ftl">
 <!DOCTYPE html>
 <html>
     <head>
         <@head title="${page.pageTitle} - ${blogTitle}">
-        <meta name="keywords" content="${metaKeywords},${page.pageTitle}" />
-        <meta name="description" content="${metaDescription}" />
+        <link type="text/css" rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/base${miniPostfix}.css?${staticResourceVersion}" charset="utf-8" />
         </@head>
     </head>
     <body>

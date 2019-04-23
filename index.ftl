@@ -17,17 +17,12 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 -->
-<#include "macro-head.ftl">
+<#include "../../common-template/macro-common_head.ftl">
 <!DOCTYPE html>
 <html>
     <head>
         <@head title="${blogTitle}">
-        <#if metaKeywords??>
-        <meta name="keywords" content="${metaKeywords}"/>
-        </#if>
-        <#if metaDescription??>
-        <meta name="description" content="${metaDescription}"/>
-        </#if>
+        <link type="text/css" rel="stylesheet" href="${staticServePath}/skins/${skinDirName}/css/base${miniPostfix}.css?${staticResourceVersion}" charset="utf-8" />
         </@head>
     </head>
     <body id="blog">

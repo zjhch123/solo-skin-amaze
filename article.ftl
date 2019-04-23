@@ -168,6 +168,7 @@
         <@comment_script oId=article.oId commentable=article.commentable>
             Skin.initArticle()
             Skin.initComment = function (articleOId, articleTags) {
+                page.tips.externalRelevantArticlesDisplayCount = "${externalRelevantArticlesDisplayCount}";
                 page.loadExternalRelevantArticles(articleTags, "<div class='recommend__title'>社区推荐</div>");
                 page.loadRandomArticles("<div class='recommend__title'>站内推荐</div>");
                 page.loadRelevantArticles(articleOId, '<div class="recommend__title">相关阅读</div>');

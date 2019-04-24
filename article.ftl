@@ -163,6 +163,9 @@
     <script>
         $(function() {
             $('article h1, article h2, article h3, article h4, article h5').find('a').removeAttr('target')
+            if ($('body').width() < 614) {
+                $('#comments li .user-name').removeAttr('onmouseover onmouseout')
+            }
         })
     </script>
 </html>

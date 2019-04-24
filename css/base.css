@@ -2534,7 +2534,16 @@
  .comments-container-inner .response a {
    color: #46466E
  }
- 
+ .comment-body-ref {
+   position: absolute;
+   left: 80px;
+   background: #fefefe;
+   border: 1px solid #f1f1f1;
+   width: 60%;
+ }
+ .comment-body-ref:hover {
+   display: list-item !important;
+ }
  
  @media(max-width: 1000px) {
    .directory-content {

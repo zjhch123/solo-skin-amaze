@@ -1274,10 +1274,6 @@
    left: 0;
    width: 100%;
    z-index: 3;
-   /* Hux learn from
-    *     TypeIsBeautiful,
-    *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-    */
    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
    line-height: 1.7;
  }
@@ -1923,22 +1919,6 @@
    }
  }
  
- .navbar-custom {
-   background: none;
-   border: none;
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   z-index: 3;
-   /* Hux learn from
-    *     TypeIsBeautiful,
-    *     [This Post](http://zhuanlan.zhihu.com/ibuick/20186806) etc.
-    */
-   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Arial", "PingFang SC", "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun, sans-serif;
-   line-height: 1.7;
- }
- 
  .navbar-custom .navbar-brand {
    font-weight: 800;
    color: white;
@@ -2534,7 +2514,16 @@
  .comments-container-inner .response a {
    color: #46466E
  }
- 
+ .comment-body-ref {
+   position: absolute;
+   left: 80px;
+   background: #fefefe;
+   border: 1px solid #f1f1f1;
+   width: 60%;
+ }
+ .comment-body-ref:hover {
+   display: list-item !important;
+ }
  
  @media(max-width: 1000px) {
    .directory-content {
@@ -2579,6 +2568,10 @@
    list-style: none;
    border-bottom: 1px solid #f1f1f1;
    padding: 10px;
+ }
+
+ .comments>li:hover {
+   background: #f1f1f1;
  }
  
  .comments>li>div {
@@ -2648,18 +2641,18 @@
  .tags-list .tags a:active {
    border-color: #D6555F;
  }
- .topic-footer {
+.topic-footer {
    font-size: 14px;
    display: flex;
    justify-content: space-between;
  }
- .article-comments {
+.article-comments {
    color: white;
  }
- .comments-view {
+.comments-view {
    display: inline-block;
  }
- .sidebar-search {
+.sidebar-search {
   padding: 24px 0 0;
 }
 .search-input {

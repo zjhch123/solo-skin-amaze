@@ -28,7 +28,7 @@
                             <img src="${article.authorThumbnailURL}" alt="" class="link avatar avatar-image">
                         </div>
                         <div class="author-lockup blog-flex1">
-                            <a class="link" href="javascript:;">${article.authorName}</a>
+                            <a class="link" href="${servePath}/authors/${article.authorId}" rel="nofollow">${article.authorName}</a>
                             <span class="in">in</span>
                              <#list article.articleTags?split(",") as articleTag>
                              <span class="category-name">

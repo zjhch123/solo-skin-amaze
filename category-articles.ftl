@@ -27,7 +27,7 @@
     </head>
     <body>
         <#include "header.ftl">
-       <div class="am-g am-g-fixed blog-fixed">
+        <div class="am-g am-g-fixed blog-fixed">
             <div class="am-u-lg-8 am-u-sm-12">
                 <main class="category-list">
                     <div class="other">

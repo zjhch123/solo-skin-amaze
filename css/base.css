@@ -1856,6 +1856,7 @@
    font-weight: 500;
    line-height: 33px;
    margin-top: 25px !important;
+   margin-bottom: 8px;
  }
  
  @media only screen and (max-width: 767px) {
@@ -2406,14 +2407,6 @@
    align-items: center
  }
  
- .topic-header .author-lockup a {
-   font-size: 16px;
-   color: #46466E;
-   display: inline;
-   cursor: pointer;
-   text-decoration: none;
- }
-
  .topic-header .author-lockup a:hover,
  .topic-header .author-lockup a:focus {
    color: #D6555F;
@@ -2428,7 +2421,7 @@
  
  .category-name a {
    font-size: 16px;
-   color: #46466E;
+   color: #404040;
    display: inline;
    cursor: pointer;
    text-decoration: none;
@@ -2799,7 +2792,9 @@
   list-style: none;
   padding-left: 0;
 }
-
+.dynamic-comment-info {
+  margin-bottom: .8em;
+}
 
 .vditor-tooltipped {
   position: relative;

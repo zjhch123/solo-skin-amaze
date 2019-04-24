@@ -39,7 +39,7 @@
                                         <div class="avatar tooltipped tooltipped-n" aria-label="${comment.commentName}"
                                              style="background-image: url(${comment.commentThumbnailURL})"></div>
                                         <main>
-                                            <div class="fn-clear">
+                                            <div class="dynamic-comment-info">
                                                 <#if "http://" == comment.commentURL>
                                                     ${comment.commentName}
                                                     <#else>
@@ -48,7 +48,7 @@
                                                 <time class="ft-gray">${comment.commentDate?string("yyyy-MM-dd HH:mm")}</time>
                                                 <a class="reply-btn" href="${servePath}${comment.commentSharpURL}">${viewLabel}»</a>
                                             </div>
-                                            <div class="content-reset">
+                                            <div class="vditor-reset">
                                                 ${comment.commentContent}
                                             </div>
                                         </main>
@@ -64,11 +64,7 @@
         <#include "footer.ftl">
 
         <script>
-            var $commentContents = $(".comments .content-reset");
-            for (var i = 0; i < $commentContents.length; i++) {
-                var str = $commentContents[i].innerHTML;
-                $commentContents[i].innerHTML = Util.replaceEmString(str);
-            }
+            Util.parseMarkdown()
         </script>
     </body>
 </html>

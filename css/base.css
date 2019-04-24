@@ -2407,14 +2407,6 @@
    align-items: center
  }
  
- .topic-header .author-lockup a {
-   font-size: 16px;
-   color: #46466E;
-   display: inline;
-   cursor: pointer;
-   text-decoration: none;
- }
-
  .topic-header .author-lockup a:hover,
  .topic-header .author-lockup a:focus {
    color: #D6555F;
@@ -2429,7 +2421,7 @@
  
  .category-name a {
    font-size: 16px;
-   color: #46466E;
+   color: #404040;
    display: inline;
    cursor: pointer;
    text-decoration: none;

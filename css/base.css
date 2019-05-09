@@ -1395,54 +1395,6 @@
    }
  }
  
- @media only screen and (min-width: 1170px) {
-   .navbar-custom {
-     -webkit-transition: background-color 0.3s;
-     -moz-transition: background-color 0.3s;
-     transition: background-color 0.3s;
-     /* Force Hardware Acceleration in WebKit */
-     -webkit-transform: translate3d(0, 0, 0);
-     -moz-transform: translate3d(0, 0, 0);
-     -ms-transform: translate3d(0, 0, 0);
-     -o-transform: translate3d(0, 0, 0);
-     transform: translate3d(0, 0, 0);
-     -webkit-backface-visibility: hidden;
-     backface-visibility: hidden;
-   }
-   .navbar-custom.is-fixed {
-     /* when the user scrolls down, we hide the header right above the viewport */
-     position: fixed;
-     top: -62px;
-     background-color: rgba(255, 255, 255, 0.9);
-     border-bottom: 1px solid #f2f2f2;
-     -webkit-transition: -webkit-transform 0.3s;
-     -moz-transition: -moz-transform 0.3s;
-     transition: transform 0.3s;
-   }
-   .navbar-custom.is-fixed .navbar-brand {
-     color: #404040;
-   }
-   .navbar-custom.is-fixed .navbar-brand:hover,
-   .navbar-custom.is-fixed .navbar-brand:focus {
-     color: #D6555F;
-   }
-   .navbar-custom.is-fixed .nav li a {
-     color: #404040;
-   }
-   .navbar-custom.is-fixed .nav li a:hover,
-   .navbar-custom.is-fixed .nav li a:focus {
-     color: #D6555F;
-   }
-   .navbar-custom.is-visible {
-     /* if the user changes the scrolling direction, we show the header */
-     -webkit-transform: translate3d(0, 100%, 0);
-     -moz-transform: translate3d(0, 100%, 0);
-     -ms-transform: translate3d(0, 100%, 0);
-     -o-transform: translate3d(0, 100%, 0);
-     transform: translate3d(0, 100%, 0);
-   }
- }
- 
  @media only screen and (min-width: 767px) {
    .navbar-custom {
      -webkit-transition: background-color 0.3s;
@@ -1460,7 +1412,7 @@
    .navbar-custom.is-fixed {
      /* when the user scrolls down, we hide the header right above the viewport */
      position: fixed;
-     top: -61px;
+     top: -62px;
      background-color: rgba(255, 255, 255, 0.9);
      border-bottom: 1px solid #f2f2f2;
      -webkit-transition: -webkit-transform 0.3s;

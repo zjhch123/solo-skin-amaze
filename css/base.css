@@ -1379,7 +1379,6 @@
  .navbar {
    position: relative;
    min-height: 50px;
-   margin-bottom: 20px;
    border: 1px solid transparent;
  }
  
@@ -1485,7 +1484,7 @@
  }
  
  .navbar-fixed-top {
-   position: fixed;
+   position: absolute;
    right: 0;
    left: 0;
    z-index: 1030;

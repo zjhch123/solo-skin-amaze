@@ -72,7 +72,7 @@ var Skin = {
             __HuxNav__.close()
         });
         jQuery(document).ready(function (c) {
-            var d = 1170;
+            var d = 767;
             if (c(window).width() > d) {
                 var b = c(".navbar-custom").height(),
                     a = c(".intro-header .container").height();

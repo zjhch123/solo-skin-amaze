@@ -3257,7 +3257,7 @@
   font-family: "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
   word-wrap: break-word;
   overflow: auto;
-  line-height: 1.65;
+  line-height: 1.85;
   font-size: 14px;
   word-break: break-word
 }
@@ -3480,7 +3480,7 @@
 }
 
 .vditor-reset {
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 
 .vditor-reset ol { counter-reset: item; position: relative; }

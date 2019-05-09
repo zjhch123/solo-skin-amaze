@@ -1412,7 +1412,7 @@
    .navbar-custom.is-fixed {
      /* when the user scrolls down, we hide the header right above the viewport */
      position: fixed;
-     top: -61px;
+     top: -62px;
      background-color: rgba(255, 255, 255, 0.9);
      border-bottom: 1px solid #f2f2f2;
      -webkit-transition: -webkit-transform 0.3s;
@@ -1443,7 +1443,7 @@
    }
  }
  
- @media only screen and (min-width: 1170px) {
+ @media only screen and (min-width: 767px) {
    .navbar-custom {
      -webkit-transition: background-color 0.3s;
      -moz-transition: background-color 0.3s;
